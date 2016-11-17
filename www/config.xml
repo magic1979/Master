@@ -4,11 +4,12 @@
 		id        = "it.master"
 		versionCode="1"
 		version   = "1">
-		<name>Aermes</name>
-		<description>Aermes, Spedizione Pacchi</description>
+		<name>Master</name>
+		<description>Master, Spedizione Pacchi</description>
 		<author href="http://msop.it" email="info@msop.it">
 			Associazione Game Answer
 		</author>
+		
 		<preference name="phonegap-version" value="cli-6.3.0" />
 		<preference name="orientation" value="portrait" />
 		<preference name="android-windowSoftInputMode" value="adjustResize" />
@@ -45,6 +46,7 @@
 		<preference name="StatusBarOverlaysWebView" value="true" />
 		<preference name="GapBetweenPages" value="0" />
 		<preference name="android-build-tool" value="gradle" />
+		
 		<gap:platform name="android" />
 		<feature name="http://api.phonegap.com/1.0/battery"/>
 		<feature name="http://api.phonegap.com/1.0/geolocation"/>
@@ -72,6 +74,14 @@
 		<plugin name="cordova-plugin-statusbar"           source="npm" />
 		<plugin name="cordova-plugin-vibration"           source="npm" />
 		<plugin name="cordova-plugin-whitelist"           source="npm" />
+		<plugin name="cordova-plugin-email-composer" source="npm" />
+		<plugin  name="ionic-plugin-keyboard"  source="npm" />
+		<plugin name="cordova-plugin-insomnia" source="npm" />
+		<plugin name="cordova-plugin-datepicker" source="npm" />
+		<plugin name="cordova-plugin-statusbar" source="npm" />
+		<plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>
+		<plugin name="cordova-plugin-request-location-accuracy" source="npm" />
+		<plugin name="cordova-plugin-pushplugin" source="npm" />
 		
 		<icon src="res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57" />
 		<icon src="res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
@@ -127,6 +137,6 @@
 		<platform name="android">
 			<allow-intent href="market:*" />
 		</platform>
-
 		
+	
 	</widget>
